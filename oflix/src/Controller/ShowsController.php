@@ -17,4 +17,14 @@ class ShowsController extends AbstractController
             'controller_name' => 'ShowsController'
         ]);
     }
+
+    /**
+     * @Route("/shows/45", name="shows_read")
+     */
+    public function read(): Response
+    {
+        return $this->render('shows/read.html.twig', [
+            'controller_name' => 'ShowsController'
+        ]);
+    }
 }
